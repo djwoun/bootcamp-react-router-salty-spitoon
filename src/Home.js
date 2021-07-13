@@ -1,21 +1,21 @@
-import React from 'react'
-
+import React from "react";
+import { Link } from "react-router-dom"
 const Home = () => (
   <>
     <h1>Welcome to the Salty Spatoon. How tough are ya?</h1>
     <img class="mommas-boy" src="/how-tough.png" alt="Mommas boy" />
     <ul>
       <li>
-        <a>I AM a weenie :'(</a>
+        <Link to="/Weenie">I AM a weenie :'(</Link>
       </li>
       <li>
-        <a>I'm not a weenie!</a>
+        <Link to="/Superweenie">I'm not a weenie!</Link>
       </li>
       <li>
-        <a>💪 💪 💪</a>
+       <Link to="/Spitoon">💪 💪 💪</Link>
       </li>
     </ul>
   </>
-)
+);
 
-export default Home
+export default Home;
